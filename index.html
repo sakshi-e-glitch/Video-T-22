@@ -1,45 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taarangana video</title>
-    <link rel="stylesheet" href="vid.css">
-</head>
-<body>
-    
-    <section class="showcase">
-        <header>
-          <h2 class="logo">Cultural Fest</h2>
-          <div class="toggle" id="toggle1"></div>
-        </header>
-        <!-- <video src="video.mp4" muted loop autoplay></video> -->
-        <video src="try.mp4" muted loop autoplay></video>
-        <div class="overlay"></div>
-        <div class="text">
-          <h2>TAARANGANA'22</h2> 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.</p>
-          <a href="#">Explore</a>
-        </div>
-        <ul class="social">
-          <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
-          <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
-          <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
-        </ul>
-      </section>
-      <div class="menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Timeline</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
 
-      <script src="vid.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taarangana video</title>
+  <script src="https://bootstrapcreative.com/wp-bc/wp-content/themes/wp-bootstrap/codepen/bootstrapcreative.js?v=7"></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="vid.css">
+</head>
+
+<body>
+
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Cultural Fest</h2>
+    </header>
+    <!-- <video src="video.mp4" muted loop autoplay></video> -->
+    <video src="videos/bg-video.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>TAARANGANA'22</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+      <a href="#">Explore</a>
+    </div>
+    <!-- <div class="container"> -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-outline-danger video-btn" data-bs-toggle="modal" data-src="videos/play-vid.mp4" data-bs-target="#myModal">
+        ▶
+      </button>
+    <!-- </div> -->
+    <!-- <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul> -->
+  </section>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></span>
+          </button>
+          <!-- aspect ratio -->
+          <div class="ratio" style="--bs-aspect-ratio: 72%;">
+            <iframe class="embed-responsive-item" src="videos/play-vid.mp4" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js'></script>
+  <script src="./vid.js"></script>
 </body>
+
 </html>
