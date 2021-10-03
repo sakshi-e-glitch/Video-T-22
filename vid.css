@@ -55,7 +55,7 @@ header .logo
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111;
+  background-color: black;
   transition: 0.5s;
   z-index: 2;
 }
@@ -139,7 +139,12 @@ header .logo
 .video-btn {
   border-radius: 100%;
   height: 6rem;
-  width: 8rem;
+  width: 10rem;
+  border: solid 7px red;
+}
+
+.button-text {
+  font-size: 2.5rem;
 }
 /* MODAL STARTS*/
 
@@ -158,6 +163,7 @@ body {margin-top:-3.8rem;}
   position:absolute;
   right:-30px;
   top:0;
+  background-color: red;
 }
 
 /* MODAL ENDS */
@@ -192,6 +198,9 @@ body {margin-top:-3.8rem;}
   .modal-dialog {
     margin-top: 80px;
     max-width: 580px;
+  }
+  .button-text {
+    font-size: 1rem;
   }
 }
 
