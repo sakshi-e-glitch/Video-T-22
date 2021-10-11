@@ -137,10 +137,11 @@ header .logo
 }
 
 .video-btn {
-  border-radius: 100%;
+  border-radius: 50%;
   height: 6rem;
   width: 10rem;
   border: solid 7px red;
+  margin-right: 120px;
 }
 
 .button-text {
