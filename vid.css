@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
 *
 {
   margin: 0;
@@ -101,21 +102,68 @@ header .logo
 
 .text h2
 {
-  font-size: 5em;
+  font-family: "Vibur", cursive;
   font-weight: 800;
-  color: #fff;
   line-height: 1em;
   text-transform: uppercase;
+  font-size: 4.5rem;
+  text-align: left;
+  line-height: 1;
+  color: #c6e2ff;
+  animation: neon 1s ease-in-out infinite alternate;
 }
-
+@keyframes neon {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(242, 55, 30, 0.52),
+    0 0 21px rgba(242, 30, 58, 0.92),
+    0 0 34px rgba(242, 30, 30, 0.78),
+    0 0 54px rgba(242, 30, 83, 0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
+  }
+}
 .text p
 {
-  font-size: 1.1em;
+  /* font-size: 1.1em;
   color: #fff;
   margin: 20px 0;
   font-weight: 400;
   /* max-width: 700px; */
-  width: 80%;
+  /*width: 80%; */
+  font-family: Lora;
+  letter-spacing: 0.2rem;
+  stroke: #ffa5d8;
+  font-size: 7rem;
+  font-weight: 700;
+  stroke-width: 3;
+ 
+  animation: textAnimate 5s infinite alternate;
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    fill:hsl(189, 68%, 75%)
+
+  }
+  
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%,0%)
+  }
+  
 }
 .text a
 {
@@ -138,14 +186,36 @@ header .logo
 
 .video-btn {
   border-radius: 50%;
-  height: 6rem;
-  width: 10rem;
+  height: 8rem;
+  width: 8rem;
   border: solid 7px red;
-  margin-right: 120px;
+  /* margin-right: 1; */
 }
 
 .button-text {
-  font-size: 2.5rem;
+  font-size: 4rem;
+  animation: neon1 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(242, 55, 30, 0.52),
+    0 0 21px rgba(242, 30, 58, 0.92),
+    0 0 34px rgba(242, 30, 30, 0.78),
+    0 0 54px rgba(242, 30, 83, 0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(242, 79, 30, 0.58),
+    0 0 22px rgba(242, 72, 30, 0.84),
+    0 0 38px rgba(242, 157, 30, 0.88),
+    0 0 60px rgb(242, 125, 30);
+  }
 }
 /* MODAL STARTS*/
 
@@ -212,7 +282,7 @@ body {margin-top:-3.8rem;}
   }
 
   .text p{
-    font-size: 1rem;
+    font-size: 4rem;
   }
   .modal-dialog {
     margin-top: 180px;
@@ -227,7 +297,7 @@ body {margin-top:-3.8rem;}
   }
 
   .text p{
-    font-size: 1rem;
+    font-size: 3.5rem;
   }
   .modal-dialog {
     margin-top: 200px;
@@ -242,6 +312,6 @@ body {margin-top:-3.8rem;}
   }
 
   .text p{
-    font-size: 0.8rem;
+    font-size: 2.6rem;
   }
 }
